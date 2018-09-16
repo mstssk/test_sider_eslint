@@ -1,0 +1,19 @@
+{
+  "name": "test_sider_eslint",
+  "version": "1.0.0",
+  "description": "SiderでESLint使う検証用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mstssk/test_sider_eslint.git"
+  },
+  "author": "mstssk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mstssk/test_sider_eslint/issues"
+  },
+  "homepage": "https://github.com/mstssk/test_sider_eslint#readme"
+}
