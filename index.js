@@ -1,15 +1,7 @@
 const fs = require("fs");
 
 (async function () {
-    const pkg = await readFile("package.json")
-        .then(function (data) {
-            return JSON.parse(data);
-        }, function (err) {
-            console.error(err);
-            process.exit(1);
-            return null;
-        });
-
+    const pkg = await readFile("package.json").then(data => JSON.parse(data), onError);
     console.log(pkg.name);
 })();
 
@@ -24,4 +16,10 @@ function readFile(path) {
 
         });
     });
+}
+
+function onError(err) {
+    console.error(err);
+    process.exit(1);
+    return null;
 }
