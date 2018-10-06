@@ -1,0 +1,11 @@
+{
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaVersion": 2018
+    },
+    "rules": {
+        "no-undef": "off",
+        "no-unused-vars": "off",
+        "no-console": "off"
+    }
+}
